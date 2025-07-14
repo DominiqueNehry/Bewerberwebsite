@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bewerbung – Dominique Nehry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #0033a0;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .profile-pic {
+      width: 180px;
+      border-radius: 8px;
+    }
+    .button {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.7rem 1.5rem;
+      background-color: #0033a0;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      margin-top: 3rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #0033a0;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dominique Nehry</h1>
+    <p>Umschulung zum Kaufmann für Büromanagement</p>
+  </header>
+
+  <section>
+    <h2>Über mich</h2>
+    <img src="bewerbungsfoto.png" alt="Bewerbungsfoto" class="profile-pic" />
+    <p><strong>Geburtsdatum:</strong> 06.11.1994</p>
+    <p><strong>Nationalität:</strong> Deutsch</p>
+  </section>
+
+  <section>
+    <h2>Lebenslauf</h2>
+    <a class="button" href="Lebenslauf.pdf" target="_blank">📄 Lebenslauf anzeigen</a>
+  </section>
+
+  <section>
+    <h2>Kontaktformular</h2>
+    <form action="https://formsubmit.co/dominique_nehry@hotmail.de" method="POST">
+      <input type="hidden" name="_next" value="https://thankyou.page">
+      <input type="hidden" name="_captcha" value="false">
+      <label>Name oder Firma:</label>
+      <input type="text" name="name" required />
+      <label>Kontakt (E-Mail oder Telefon):</label>
+      <input type="text" name="contact" required />
+      <label>Nachricht:</label>
+      <textarea name="message" rows="5" required></textarea>
+      <button type="submit">📨 Nachricht senden</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Dominique Nehry
+  </footer>
+</body>
+</html>
